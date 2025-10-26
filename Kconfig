@@ -57,16 +57,16 @@ config PMW3610_SCROLL_TICK
 
 choice
     prompt "Select PMW3610's polling rate"
-    default PMW3610_POLLING_RATE_500
-
-config PMW3610_POLLING_RATE_500
-    bool "500 Hz"
+    default PMW3610_POLLING_RATE_250
 
 config PMW3610_POLLING_RATE_250
-    bool "250 Hz"
+    bool "500 Hz"
 
-config PMW3610_POLLING_RATE_250_SW
-    bool "250 Hz with software implementation"
+config PMW3610_POLLING_RATE_125
+    bool "125 Hz"
+
+config PMW3610_POLLING_RATE_125_SW
+    bool "125 Hz with software implementation"
 
 endchoice
 
